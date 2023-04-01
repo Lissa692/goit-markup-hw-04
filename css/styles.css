@@ -433,9 +433,9 @@ body {
 }
 .aside-link:hover,
 .aside-link:focus {
-  box-shadow: 14px 7px 25px 0px rgba(162,135,198,0.75);
- 14px 7px 25px 0px rgba(162,135,198,0.75);
-14px 7px 25px 0px rgba(162,135,198,0.75);
+  box-shadow: 14px 7px 25px 0px rgba(162, 135, 198, 0.75),
+    14px 7px 25px 0px rgba(162, 135, 198, 0.75),
+    14px 7px 25px 0px rgba(162, 135, 198, 0.75);
 }
 
 .list-names {
