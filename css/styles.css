@@ -451,6 +451,30 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
+.aside-list {
+  width: calc((100% - 48px) / 3);
+}
+
+.overlay-card {
+  position: relative;
+  overflow: hidden;
+}
+.text-card {
+  position: absolute;
+  top: 0;
+  padding-left: 32px;
+  padding-top: 40px;
+  padding-right: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light);
+  background-color: var(--primary-brand);
+  height: 100%;
+  transform: translateY(100%);
+  transition: var(--effects);
+}
+
 .aside-link {
   display: block;
   transition: box-shadow var(--effects);
@@ -460,6 +484,10 @@ body {
   box-shadow: 14px 7px 25px 0px rgba(162, 135, 198, 0.75),
     14px 7px 25px 0px rgba(162, 135, 198, 0.75),
     14px 7px 25px 0px rgba(162, 135, 198, 0.75);
+}
+.aside-link:hover .text-card,
+.aside-link:focus .text-card {
+  transform: translateY(0);
 }
 
 .list-names {
@@ -555,4 +583,24 @@ body {
   background-color: var(--success);
 }
 .footer-soc-icon {
+}
+/*____________________modal-window____________ */
+.backdrop {
+  position: fixed;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background: var(--modal-overlay);
+}
+.modal-window {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 576px;
+  background: var(--modal-background);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
